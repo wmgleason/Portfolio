@@ -46,8 +46,22 @@ padding-bottom: 30px;
 padding: 7px 14px;
 }
  
+.img {
+    position: absolute;
+	max-width: 80%;
+	top: 20%;
+	left: 20%;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
 .icon-bar {
     background: transparent;
+}
+
+.container_text {
+    color: white;
+    text-align: center;
+    font-size: large;
 }
 @keyframes move {
     100% {
