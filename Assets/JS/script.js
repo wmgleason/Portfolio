@@ -1,18 +1,33 @@
-$(document).ready(function(){
 
-    $("#my-btn").hover(function(){
-        $(this).toggleClass("btn-danger");
+
+$(document).ready(function(){
+    $('#portfolio .thumbnail').hover(function(){
+      $(this).children(".cust-caption").slideDown();
+    },
+    function(){
+      $(this).children(".cust-caption").fadeOut();
     });
   
+      
+    // see and scroll menu 
+    $("#navbar a.areas").click( function(e) {
+    
+      // prevent default anchor click behavior
+      e.preventDefault();
+  
+      // store areas
+      var areas = this.areas;
+  
+      // Destination
+      var scrollOffset = $(this.areas).offset().top;
+  
+      // animate
+      $('html, body').animate({
+        scrollTop: scrollOffset
+      }, 500, function(){
+        window.location.areas = areas;
+      }) 
+    })
+  });
+  
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-         x.className += " responsive";
-        } 
-        else {
-            x.className = "topnav";
-            }
-    }
-});
