@@ -33,7 +33,7 @@ body{
     position: absolute;
     background-color: rgba(30,30,30,0.8);
     padding : 10px;
-    color:#ddd;
+    color: rgb(231, 231, 241);
     margin:5px;
     bottom:0;
     left:0;
@@ -44,7 +44,7 @@ body{
   }
   
   .as-font{
-    font-family: 'Alegreya Sans',monospace;
+    font-family: 'Alegreya Sans', monospace;
   }
   
   .color-hover:hover{
@@ -78,8 +78,6 @@ body{
           position : relative;
       left : 10px;
   }
-  
-  
   
   .logo{
       padding-top:50px;
