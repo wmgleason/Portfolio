@@ -13,8 +13,8 @@
 }
 .navbar-brand>img {
     max-height: 100%; /* resize DOWN to height of container which is set to 50px */
-    height: 50%; /* resize UP to fit*/
-    max-width: 33%;  /*probably not necessary */
+    height: 100%; /* resize UP to fit*/
+    max-width: 100%;  /*probably not necessary */
     /* width: auto; resize based on height */
     margin: 0 auto;
     background: transparent;
@@ -37,7 +37,8 @@ background: transparent;
 /* line height is 20px so add 30px top and bottom to equal the new .navbar-brand height */
 .topNavbar .nav >li >a {
 padding-top: 30px;
-padding-bottom: 15px;
+padding-bottom: 30px;
+/* margin-bottom: 25px; */
 }
 
 
@@ -70,15 +71,8 @@ body {
   
   /* Style the links inside the navigation bar */
   .topnavbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-    height: 80px;
-    margin: 30px;
+    background-color: transparent;
+    overflow: hidden;
   }
   
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

@@ -273,14 +273,11 @@ padding: 7px 14px;
     box-shadow: -40vmin 0 5.991791420819966vmin currentColor;
 }
 
-
-
 /* Add a  background color to the top navigation */
 .topnavbar {
     background-color: transparent;
     overflow: hidden;
   }
-  
   /* Style the links inside the navigation bar */
   .topnavbar a {
     float: left;
@@ -292,24 +289,20 @@ padding: 7px 14px;
     font-size: 24px;
     height: 80px;
   }
-  
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
   /* Add an active class to highlight the current page */
-  .topnav a.active {
+  /* .topnav a.active {
     background-color: #4CAF50;
     color: white;
-  }
-  
+  } */
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
   }
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -318,7 +311,6 @@ padding: 7px 14px;
       display: block;
     }
   }
-  
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
@@ -333,11 +325,96 @@ padding: 7px 14px;
       text-align: left;
     }
   }
-  .footer {
-    text-align: center;
+  .bottom {
     padding-top: 5px;
-    margin-top: 5px;
-    background-color: #DCDCDC;
-    color: black;
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    display: table;
+    margin-left: 30px auto;
+    overflow: hidden;
+    bottom: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center baseline;
+    list-style-type: none;
+    column-gap: 20px;
   }
+
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column a>img {
+    float: center;
+    width: auto;
+    max-height: 2in;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    column-gap: 20px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* input#aboutTile    {
+    /* background:url(./Assets/Images/aboutWandaTile.png); */
+    /* background-repeat: no-repeat;
+    width:40px;
+    height:40px;
+    border: 0;
+    }
+    input#aboutTile:hover    {
+        /* background:url(../search-icon2.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:40px;
+        border: 0;
+        }
+    input#contactTile    { */
+        /* background:url(../search-icon.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:40px;
+        border: 0;
+        }
+    input#contactTile:hover    { */
+        /* background:url(../search-icon2.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:40px;
+        border: 0;
+        }
+    input#projectsTile    { */
+        /* background:url(../search-icon.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:40px;
+        border: 0;
+        } */
+    /* input#projectsTile:hover    { */
+        /* background:url(../search-icon2.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:40px;
+        border: 0;
+        }
+    input#linkedInTile    { */
+        /* background:url(../search-icon.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:40px;
+        border: 0;
+        }
+    input#linkedInTile:hover    { */
+        /* background:url(../search-icon2.png); */
+        /* background-repeat: no-repeat;
+        width:40px;
+        height:60px;
+        border: 0;
+        }  */ 
