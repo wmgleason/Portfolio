@@ -7,13 +7,13 @@ $(document).ready(function(){
   });
 
     
-  // spy and scroll menu boogey
-  $("#navbar a.hash").click( function(e) {
+  // spy and scroll menu 
+  $("#navbar a.areas").click( function(e) {
   
     // prevent default anchor click behavior
     e.preventDefault();
 
-    // store hash
+    // store areas
     var areas = this.areas;
 
     // Destination
