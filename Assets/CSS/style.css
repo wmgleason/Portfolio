@@ -23,7 +23,7 @@ body{
   }
   
   .shadow{
-    box-shadow: 7px 7px 7px #666;
+    box-shadow: 7px 7px 7px rgb(128, 127, 127);
      position : relative;
     transition : all 0.2s;
     top : 0;
@@ -132,11 +132,11 @@ body{
     background: fixed url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/random_grey_variations.png' );  
   }
   footer a{
-      color:white;
+      color:rgb(194, 191, 248);
   }
   
   footer a:hover{
-      color:white;
+      color:rgb(219, 219, 226);
   }
   
   
